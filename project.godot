@@ -8,6 +8,22 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "KinematicBody2DWithGravitation",
+"class": "BasicEnemy",
+"language": "GDScript",
+"path": "res://scripts/enemies/Enemy.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "KinematicBody2DWithGravitation",
+"language": "GDScript",
+"path": "res://scripts/KinematicBodyWithGravitation.gd"
+} ]
+_global_script_class_icons={
+"BasicEnemy": "",
+"KinematicBody2DWithGravitation": ""
+}
+
 [application]
 
 config/name="AngryMan"
@@ -41,11 +57,17 @@ down={
 , Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":16777234,"unicode":0,"echo":false,"script":null)
  ]
 }
+hand_kick={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":88,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
 
 [layer_names]
 
 2d_physics/layer_1="Player"
-2d_physics/layer_2="Platforms"
+2d_physics/layer_2="Platform"
+2d_physics/layer_3="Enemy"
 
 [physics]
 
