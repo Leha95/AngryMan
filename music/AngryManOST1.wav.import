@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/AngryManOST1.wav-7cc5d8ca93dc2e3e15d76d1f3d4468aa.sample"
+
+[deps]
+
+source_file="res://music/AngryManOST1.wav"
+dest_files=[ "res://.import/AngryManOST1.wav-7cc5d8ca93dc2e3e15d76d1f3d4468aa.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
